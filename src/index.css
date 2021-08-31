@@ -1,8 +1,6 @@
 body {
   /* margin-top: 100px; */
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Titillium Web", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: black;
@@ -47,12 +45,13 @@ code {
   height: 80px;
   margin-bottom: 100px;
   padding: 20px;
+  z-index: 9999;
 }
 
 .navbar {
   list-style-type: none;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   display: flex;
   width: 100%;
   top: 0;
@@ -73,7 +72,66 @@ code {
   padding: 20px;
 }
 
+.pacmanLogo {
+  width: 200px;
+}
+
+.pacmanLogoLarge {
+  width: 800px;
+}
+
 #home {
+  display: flex;
+  flex-direction: COLUMN;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  height: 600px;
+}
+
+.homeLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+h2 {
+  color: yellow;
+}
+
+.homeBtn {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #ffffff;
+  margin: 0 20px 20px 0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.homeBtn:hover {
+  color: #000000;
+  background-color: cyan;
+  border: none;
+}
+
+.homeRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding-left: 50px;
+  margin-top: 40px;
+}
+
+#rules {
   color: white;
   display: flex;
   flex-direction: row;
@@ -84,7 +142,7 @@ code {
   padding: 50;
 }
 
-.homeContainer {
+.rulesContainer {
   color: white;
   display: flex;
   flex-direction: row;

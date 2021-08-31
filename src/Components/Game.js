@@ -1,24 +1,23 @@
 import React from "react";
 import Pacman from "./Pacman";
 
-function refreshPage() {
-  window.location.reload();
-}
-
+// Disable key up/down page scrolling
+// (so the page doesn't scroll while playing pacman)
 document.addEventListener("keydown", function (e) {
-  // To make sure it freezes the scroll when
-  // the first two keypresses are "ArrowUp"
-  if (e.key === "ArrowUp" || e.key === "ArrowUp" || e.key === "ArrowDown") {
+  if (e.key === "ArrowUp" || e.key === "ArrowDown") {
     e.preventDefault();
   }
 });
+
+function refreshPage() {
+  window.location.reload();
+}
 
 Pacman();
 
 const Game = () => {
   return (
     <div id="game">
-      {/* <Pacman /> */}
       <h3 onClick={refreshPage} className="startBtn">
         START
       </h3>

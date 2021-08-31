@@ -1,28 +1,25 @@
 import React from "react";
 import pacmanGIF from "../images/pacman-gif.gif";
+import pacmanLogo from "../images/pacman-logo2.png";
+import { Link } from "react-scroll";
 
 const Home = () => {
   return (
     <div id="home">
-      <div className="homeContainer">
-        <div className="rules">
-          <h1>Welcome to Pacman! Here are the rules:</h1>
-          <ul>
-            <li>You control Pacman</li>
-            <li>
-              The goal is to eat all of the dots inside of the maze, while
-              avoiding the colored ghosts.
-            </li>
-            <li>
-              Eating a Power Pellet will cause the ghosts to turn blue, allowing
-              you to temporaily eat them for bonus points.
-            </li>
-            <li>Most important rule: have fun!!!</li>
-          </ul>
+      <div className="homeLeft">
+        <img src={pacmanLogo} alt="Pacman Logo" className="pacmanLogoLarge" />
+        <h2>Dive into some nostaglia and play a classic game of Pacman!</h2>
+        <div className="homeButtons">
+          <Link to="rules" className="homeBtn" spy={true} smooth={true}>
+            RULES
+          </Link>
+          <Link to="game" className="homeBtn" spy={true} smooth={true}>
+            PLAY
+          </Link>
         </div>
-        <div>
-          <img src={pacmanGIF} alt="Pacman GIF" />
-        </div>
+      </div>
+      <div className="homeRight">
+        <img src={pacmanGIF} alt="Pacman GIF" />
       </div>
     </div>
   );

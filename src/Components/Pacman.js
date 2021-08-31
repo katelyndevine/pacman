@@ -1,6 +1,6 @@
 export default function Pacman() {
   document.addEventListener("DOMContentLoaded", () => {
-    // const grid = document.querySelector(".grid");
+    const grid = document.querySelector(".grid");
     const scoreDisplay = document.getElementById("score");
     const width = 28; // 28 x 28 = 784 squares
     let score = 0;
@@ -39,8 +39,6 @@ export default function Pacman() {
     1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
   ];
 
-    // let arry = [1, 2, 2, 4, 6];
-
     // legend:
     // 0: pac-dot
     // 1: wall
@@ -52,8 +50,6 @@ export default function Pacman() {
 
     // create board
     function createBoard() {
-      const grid = document.querySelector(".grid");
-
       for (let i = 0; i < layout.length; i++) {
         const square = document.createElement("div");
         grid.appendChild(square);
@@ -99,8 +95,6 @@ export default function Pacman() {
           if (pacmanCurrentIdx - 1 === 363) {
             pacmanCurrentIdx = 391;
           }
-          e.preventDefault();
-          e.stopPropagation();
           break;
         case 38: //arrow up
           // is pacman is anywhere but the top row
@@ -111,8 +105,6 @@ export default function Pacman() {
             !squares[pacmanCurrentIdx - width].classList.contains("ghost-lair")
           )
             pacmanCurrentIdx -= width;
-          e.preventDefault();
-          e.stopPropagation();
           break;
         case 39: // arrow right
           // if pacman is anywhere by the right-most column
@@ -128,8 +120,6 @@ export default function Pacman() {
           if (pacmanCurrentIdx + 1 === 392) {
             pacmanCurrentIdx = 364;
           }
-          e.preventDefault();
-          e.stopPropagation();
           break;
         case 40: // arrow down
           // if pacman is anwehere but the bottom row
@@ -140,8 +130,6 @@ export default function Pacman() {
             !squares[pacmanCurrentIdx + width].classList.contains("ghost-lair")
           )
             pacmanCurrentIdx += width;
-          e.preventDefault();
-          e.stopPropagation();
           break;
       }
 
@@ -222,7 +210,8 @@ export default function Pacman() {
         getOutOfLairDirections[
           Math.floor(Math.random() * getOutOfLairDirections.length)
         ];
-
+      // If ghosts are still in the lair, we want them to only move UP until
+      // they are out of the lair
       ghost.timerId = setInterval(function () {
         if (
           squares[ghost.currentIdx].classList.contains("ghost-lair") &&
@@ -313,10 +302,7 @@ export default function Pacman() {
       ) {
         ghosts.forEach((ghost) => clearInterval(ghost.timerId));
         document.removeEventListener("keyup", movePacman);
-        // setTimeout(function () {
-        //   alert("Game Over!");
-        // }, 500);
-        scoreDisplay.innerHTML = "GAME OVER!";
+        scoreDisplay.innerHTML = `${score}, GAME OVER!`;
       }
     }
 
