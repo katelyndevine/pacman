@@ -1,13 +1,86 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 560px;
+  height: 560px;
+  border: 10px solid black;
+  border-radius: 10px;
+}
+
+.grid div {
+  width: 20px;
+  height: 20px;
+  /* background: rgb(56, 50, 63); */
+}
+
+.pac-dot {
+  background-color: rgb(252, 196, 91);
+  border: 7px solid rgb(56, 50, 63);
+  box-sizing: border-box;
+}
+
+.eatenPacDot {
+  background-color: rgb(56, 50, 63);
+}
+
+.wall {
+  background-color: black;
+  /* border: 2px solid blue; */
+}
+
+.ghost-lair {
+  background-color: rgb(56, 50, 63);
+}
+
+.empty {
+  background-color: rgb(56, 50, 63);
+}
+
+.power-pellet {
+  background-color: rgb(0, 252, 101);
+  border: 3px solid rgb(56, 50, 63);
+  box-sizing: border-box;
+}
+
+.pac-man {
+  background-color: yellow;
+  border: yellow;
+}
+
+.blinky {
+  background-color: red;
+  border: 0px;
+}
+
+.pinky {
+  background-color: pink;
+  border: 0px;
+}
+
+.inky {
+  background-color: cyan;
+  border: 0px;
+}
+
+.clyde {
+  background-color: orange;
+  border: 0px;
+}
+
+.scared-ghost {
+  background-color: rgb(0, 0, 255);
 }
