@@ -5,14 +5,19 @@ function refreshPage() {
   window.location.reload();
 }
 
+document.addEventListener("keydown", function (e) {
+  // To make sure it freezes the scroll when
+  // the first two keypresses are "ArrowUp"
+  if (e.key === "ArrowUp" || e.key === "ArrowUp" || e.key === "ArrowDown") {
+    e.preventDefault();
+  }
+});
+
 Pacman();
-// function playPacman() {
-//   Pacman();
-// }
 
 const Game = () => {
   return (
-    <div className="gameContainer">
+    <div id="game">
       {/* <Pacman /> */}
       <h3 onClick={refreshPage} className="startBtn">
         START

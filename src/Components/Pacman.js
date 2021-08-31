@@ -99,6 +99,8 @@ export default function Pacman() {
           if (pacmanCurrentIdx - 1 === 363) {
             pacmanCurrentIdx = 391;
           }
+          e.preventDefault();
+          e.stopPropagation();
           break;
         case 38: //arrow up
           // is pacman is anywhere but the top row
@@ -109,6 +111,8 @@ export default function Pacman() {
             !squares[pacmanCurrentIdx - width].classList.contains("ghost-lair")
           )
             pacmanCurrentIdx -= width;
+          e.preventDefault();
+          e.stopPropagation();
           break;
         case 39: // arrow right
           // if pacman is anywhere by the right-most column
@@ -124,6 +128,8 @@ export default function Pacman() {
           if (pacmanCurrentIdx + 1 === 392) {
             pacmanCurrentIdx = 364;
           }
+          e.preventDefault();
+          e.stopPropagation();
           break;
         case 40: // arrow down
           // if pacman is anwehere but the bottom row
@@ -134,6 +140,8 @@ export default function Pacman() {
             !squares[pacmanCurrentIdx + width].classList.contains("ghost-lair")
           )
             pacmanCurrentIdx += width;
+          e.preventDefault();
+          e.stopPropagation();
           break;
       }
 

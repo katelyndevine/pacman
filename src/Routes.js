@@ -5,7 +5,7 @@ import Game from "./Components/Game";
 
 const Routes = () => {
   return (
-    <div>
+    <div className="routez">
       <Route path="/" component={Home} />
       <Route exact path="/" component={Game} />
     </div>
