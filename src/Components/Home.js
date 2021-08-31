@@ -13,7 +13,7 @@ const Home = () => {
             avoiding the colored ghosts.
           </li>
           <li>
-            Eating a Power Pellet will cause the ghosts to turn blue, sllowing
+            Eating a Power Pellet will cause the ghosts to turn blue, allowing
             you to temporaily eat them for bonus points.
           </li>
           <li>Most important rule: have fun!!!</li>

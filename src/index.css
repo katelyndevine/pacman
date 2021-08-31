@@ -13,6 +13,21 @@ code {
     monospace;
 }
 
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 560px;
+  height: 560px;
+  border: 10px solid cyan;
+  border-radius: 10px;
+}
+
+.grid div {
+  width: 20px;
+  height: 20px;
+  /* background: rgb(56, 50, 63); */
+}
+
 .navbar {
   display: flex;
   flex-direction: row;
@@ -35,8 +50,8 @@ code {
   display: flex;
   flex-direction: row;
   width: 700px;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
 }
 
 .gameContainer {
@@ -60,21 +75,6 @@ code {
 
 .score {
   color: cyan;
-}
-
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  width: 560px;
-  height: 560px;
-  border: 10px solid cyan;
-  border-radius: 10px;
-}
-
-.grid div {
-  width: 20px;
-  height: 20px;
-  /* background: rgb(56, 50, 63); */
 }
 
 .pac-dot {

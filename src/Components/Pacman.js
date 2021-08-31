@@ -1,6 +1,6 @@
 export default function Pacman() {
   document.addEventListener("DOMContentLoaded", () => {
-    const grid = document.querySelector(".grid");
+    // const grid = document.querySelector(".grid");
     const scoreDisplay = document.getElementById("score");
     const width = 28; // 28 x 28 = 784 squares
     let score = 0;
@@ -52,6 +52,8 @@ export default function Pacman() {
 
     // create board
     function createBoard() {
+      const grid = document.querySelector(".grid");
+
       for (let i = 0; i < layout.length; i++) {
         const square = document.createElement("div");
         grid.appendChild(square);

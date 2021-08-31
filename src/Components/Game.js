@@ -5,6 +5,11 @@ function refreshPage() {
   window.location.reload();
 }
 
+Pacman();
+// function playPacman() {
+//   Pacman();
+// }
+
 const Game = () => {
   return (
     <div className="gameContainer">
@@ -19,7 +24,5 @@ const Game = () => {
     </div>
   );
 };
-
-Pacman();
 
 export default Game;
