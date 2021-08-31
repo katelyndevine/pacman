@@ -29,6 +29,16 @@ code {
   text-decoration: none;
   padding: 20px;
 }
+
+.homeContainer {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  width: 700px;
+  justify-content: center;
+  align-items: center;
+}
+
 .gameContainer {
   display: flex;
   flex-direction: column;

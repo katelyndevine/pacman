@@ -12,7 +12,7 @@ const Game = () => {
       <h3 onClick={refreshPage} className="startBtn">
         START
       </h3>
-      <div class="grid"></div>
+      <div className="grid"></div>
       <h2 className="score">
         Score: <span id="score">0</span>
       </h2>
