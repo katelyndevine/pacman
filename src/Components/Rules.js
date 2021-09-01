@@ -56,8 +56,8 @@ const Rules = () => {
             Eating a power pellet will cause the ghosts to turn blue, allowing
             pac-man to temporarily eat the ghosts for bonus points. Eating a
             ghost when they are blue will send them straight back to their
-            ghosty lair of doom. Keep in mind ghosts will be vulnerable/blue for
-            only 10 seconds.
+            ghosty lair of doom. Keep in mind, ghosts will be vulnerable and
+            blue for just 10 seconds.
           </p>
         </div>
       </div>
