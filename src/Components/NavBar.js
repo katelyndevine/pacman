@@ -13,7 +13,7 @@ const NavBar = () => {
         </li>
         <li>
           <Link activeClass="active" to="home" spy={true} smooth={true}>
-            About
+            Home
           </Link>
         </li>
         <li>

@@ -10,7 +10,7 @@ const Rules = () => {
         <h1>characters / items</h1>
         <div className="characterShell">
           <div className="pacmanSquare"></div>
-          <p> this is pacman (aka YOU)</p>
+          <p> this is pac-man (aka YOU)</p>
         </div>
         <div className="characterShell">
           <div className="ghosts">
@@ -35,7 +35,7 @@ const Rules = () => {
         </div>
         <div className="characterShell">
           <span className="keyboardDirections">← ↑ → ↓</span>
-          <p>you control pacman by using directional keys</p>
+          <p>you control pac-man by using directional keys</p>
         </div>
       </div>
       <div className="rules-containers">
@@ -54,10 +54,10 @@ const Rules = () => {
           <h1>special abilities</h1>
           <p>
             Eating a power pellet will cause the ghosts to turn blue, allowing
-            you to temporarily eat the ghosts for bonus points. Eating a ghost
-            when they are blue will send them straight back to their ghosty lair
-            of doom. Keep in mind ghosts will be vulnerable to your pacman might
-            for only 10 seconds.
+            pac-man to temporarily eat the ghosts for bonus points. Eating a
+            ghost when they are blue will send them straight back to their
+            ghosty lair of doom. Keep in mind ghosts will be vulnerable/blue for
+            only 10 seconds.
           </p>
         </div>
       </div>
