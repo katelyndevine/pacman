@@ -177,8 +177,31 @@ h2 {
 }
 
 .score {
-  color: cyan;
+  color: yellow;
+  font-size: 20px;
 }
+
+.winningScore {
+  color: cyan;
+  font-size: 40px;
+  animation: blinker 1s step-start infinite;
+}
+
+.losingScore {
+  color: red;
+  font-size: 40px;
+  animation: blinker 1s step-start infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* .losingScore {
+
+} */
 
 .pac-dot {
   background-color: rgb(252, 196, 91);

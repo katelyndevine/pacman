@@ -79,7 +79,6 @@ export default function Pacman() {
     // move pac-man
     function movePacman(e) {
       squares[pacmanCurrentIdx].classList.remove("pac-man");
-
       switch (e.keyCode) {
         case 37: // arrow left
           // if pacman is anywhere but the left-most column
@@ -302,7 +301,9 @@ export default function Pacman() {
       ) {
         ghosts.forEach((ghost) => clearInterval(ghost.timerId));
         document.removeEventListener("keyup", movePacman);
-        scoreDisplay.innerHTML = `${score}, GAME OVER!`;
+        scoreDisplay.classList.add("losingScore");
+
+        scoreDisplay.innerHTML = `${score} - GAME OVER!`;
       }
     }
 
@@ -312,9 +313,12 @@ export default function Pacman() {
       console.log("pacDot amount = ", pacDotAmt);
 
       if (!pacDotAmt) {
+        // if (pacDotAmt < 210) {
         ghosts.forEach((ghost) => clearInterval(ghost.timerId));
         document.removeEventListener("keyup", movePacman);
-        scoreDisplay.innerHTML = `${score}, YOU WON!`;
+        scoreDisplay.classList.remove("score");
+        scoreDisplay.classList.add("winningScore");
+        scoreDisplay.innerHTML = `${score} - YOU WON!`;
       }
     }
   });
