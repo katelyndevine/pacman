@@ -4,25 +4,36 @@ import pacmanGIF from "../images/pacman-gif.gif";
 const Rules = () => {
   return (
     <div id="rules">
-      <div className="rulesContainer">
-        <div className="rulesList">
-          <h1>Welcome to Pacman! Here are the rules:</h1>
-          <ul>
-            <li>You control Pacman</li>
-            <li>
-              The goal is to eat all of the dots inside of the maze, while
-              avoiding the colored ghosts.
-            </li>
-            <li>
-              Eating a Power Pellet will cause the ghosts to turn blue, allowing
-              you to temporaily eat them for bonus points.
-            </li>
-            <li>Most important rule: have fun!!!</li>
-          </ul>
+      <div className="rules-Characters">
+        <h1>characters / items</h1>
+        <div className="characterShell">
+          <div className="pacmanSquare"></div>
+          <p> this is pacman.</p>
         </div>
-        <div>
-          {/* <img src={pacmanGIF} alt="Pacman GIF" /> */}
-          <p>something over here???</p>
+        <div className="characterShell">
+          <div className="ghosts">
+            <div className="pink"></div>
+            <div className="orange"></div>
+            <div className="cyan"></div>
+            <div className="red"></div>
+          </div>
+          <p>these are the ghosts</p>
+        </div>
+        <div className="characterShell">
+          <div className="pacDots">
+            <div className="pacDot"></div>
+            <div className="pacDot"></div>
+            <div className="pacDot"></div>
+          </div>
+          <p>these are pacdots</p>
+        </div>
+        <div className="characterShell">
+          <div className="powerPellet"></div>
+          <p>These are power pellets.</p>
+        </div>
+        <div className="characterShell">
+          <span className="keyboardDirections">← ↑ → ↓</span>
+          <p>You control pacman...</p>
         </div>
       </div>
     </div>

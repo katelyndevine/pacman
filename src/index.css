@@ -11,6 +11,10 @@ code {
     monospace;
 }
 
+hr {
+  color: white;
+}
+
 .routez {
   margin-top: 250px;
   display: flex;
@@ -136,15 +140,95 @@ h2 {
 #rules {
   color: white;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   /* width: 700px; */
   /* height: 900px; */
   justify-content: center;
   align-items: center;
   padding: 50;
+  margin-bottom: 200px;
+  margin-top: 150px;
 }
 
-.rulesContainer {
+.rules-Characters {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.characterShell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.pacmanSquare {
+  width: 20px;
+  height: 20px;
+  background-color: yellow;
+  margin-right: 10px;
+}
+
+.ghosts {
+  display: flex;
+  flex-direction: row;
+}
+
+.pink {
+  width: 20px;
+  height: 20px;
+  background-color: pink;
+  margin-right: 10px;
+}
+
+.orange {
+  width: 20px;
+  height: 20px;
+  background-color: orange;
+  margin-right: 10px;
+}
+.cyan {
+  width: 20px;
+  height: 20px;
+  background-color: cyan;
+  margin-right: 10px;
+}
+.red {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  margin-right: 10px;
+}
+
+.pacDots {
+  display: flex;
+  flex-direction: row;
+}
+
+.pacDot {
+  width: 7px;
+  height: 7px;
+  background-color: rgb(252, 196, 91);
+  margin-right: 10px;
+}
+
+.powerPellet {
+  width: 18px;
+  height: 18px;
+  background-color: rgb(0, 252, 101);
+  margin-right: 10px;
+}
+
+.keyboardDirections {
+  background-color: grey;
+  border-radius: 5px;
+  padding: 3px 10px 3px 10px;
+  margin-right: 10px;
+}
+
+/* .rulesContainer {
   color: white;
   display: flex;
   flex-direction: row;
@@ -153,7 +237,7 @@ h2 {
   justify-content: center;
   align-items: center;
   margin: 50;
-}
+} */
 
 #game {
   display: flex;
