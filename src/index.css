@@ -145,9 +145,25 @@ h2 {
   /* height: 900px; */
   justify-content: center;
   align-items: center;
-  padding: 50;
+  padding: 100;
   margin-bottom: 200px;
   margin-top: 150px;
+}
+
+#rules h1 {
+  font-size: 60px;
+  margin: 0;
+}
+
+#rules img {
+  width: 300px;
+  height: 300px;
+  margin: 40px;
+}
+
+#rules p {
+  font-size: 25px;
+  margin: 10px;
 }
 
 .rules-Characters {
@@ -228,16 +244,14 @@ h2 {
   margin-right: 10px;
 }
 
-/* .rulesContainer {
-  color: white;
+.rules-containers {
   display: flex;
   flex-direction: row;
-  width: 700px;
-  height: 800px;
-  justify-content: center;
+  margin: 50px;
+  width: 900px;
   align-items: center;
-  margin: 50;
-} */
+  /* justify-content: center; */
+}
 
 #game {
   display: flex;
