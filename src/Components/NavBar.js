@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
-import pacmanLogo from "../images/pacman-logo.webp";
+import pacmanLogo from "../images/pacman-logo2.png";
 
 const NavBar = () => {
   return (

@@ -63,8 +63,11 @@ code {
 }
 
 .navbar li:hover {
-  color: pink;
+  /* color: pink; */
   cursor: pointer;
+  text-decoration: underline 2px red;
+  text-underline-offset: 0.4em;
+  /* font-weight: bold; */
 }
 
 .navLink {
@@ -104,22 +107,21 @@ h2 {
 .homeBtn {
   display: inline-block;
   padding: 0.35em 1.2em;
-  border: 0.1em solid #ffffff;
+  border: 0.1em solid yellow;
   margin: 0 20px 20px 0;
   border-radius: 10px;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: "Roboto", sans-serif;
   font-weight: 300;
-  color: #ffffff;
+  color: yellow;
   text-align: center;
   transition: all 0.2s;
 }
 
 .homeBtn:hover {
-  color: #000000;
-  background-color: cyan;
-  border: none;
+  color: cyan;
+  /* background-color: cyan; */
+  border-color: cyan;
 }
 
 .homeRight {
