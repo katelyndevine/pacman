@@ -10,7 +10,7 @@ const Rules = () => {
         <h1>characters / items</h1>
         <div className="characterShell">
           <div className="pacmanSquare"></div>
-          <p> this is pacman.</p>
+          <p> this is pacman (aka YOU)</p>
         </div>
         <div className="characterShell">
           <div className="ghosts">
@@ -27,15 +27,15 @@ const Rules = () => {
             <div className="pacDot"></div>
             <div className="pacDot"></div>
           </div>
-          <p>these are pacdots</p>
+          <p>these are pac-dots (yummy)</p>
         </div>
         <div className="characterShell">
           <div className="powerPellet"></div>
-          <p>These are power pellets.</p>
+          <p>these are power pellets (extra yummy)</p>
         </div>
         <div className="characterShell">
           <span className="keyboardDirections">← ↑ → ↓</span>
-          <p>You control pacman...</p>
+          <p>you control pacman by using directional keys</p>
         </div>
       </div>
       <div className="rules-containers">
@@ -51,11 +51,13 @@ const Rules = () => {
       <div className="rules-containers">
         <img src={pacmanEatsGhost} alt="Pacman GIF" />
         <div className="rules-copy">
-          <h1>Special Abilities</h1>
+          <h1>special abilities</h1>
           <p>
-            Eating a Power Pellet will cause the ghosts to turn blue, allowing
+            Eating a power pellet will cause the ghosts to turn blue, allowing
             you to temporarily eat the ghosts for bonus points. Eating a ghost
             when they are blue will send them straight back to their ghosty lair
+            of doom. Keep in mind ghosts will be vulnerable to your pacman might
+            for only 10 seconds.
           </p>
         </div>
       </div>
