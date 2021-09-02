@@ -20,12 +20,6 @@ const Footer = () => {
           LINKEDIN
         </a>
       </span>
-      {/* <span id="copywrite">© 2021</span> */}
-      {/* <span>
-        <a href="https://www.katelyn-portfolio.com/" target="blank">
-          GRAPHIC DESIGN
-        </a>
-      </span> */}
     </div>
   );
 };

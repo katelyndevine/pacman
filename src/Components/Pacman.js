@@ -197,7 +197,7 @@ export default function Pacman() {
       return [index % width, Math.floor(index / width)];
     }
 
-    // move ghosts randomly
+    // move ghosts closer to pacman with each move
     ghosts.forEach((ghost) => moveGhost(ghost));
 
     function moveGhost(ghost) {
@@ -262,10 +262,6 @@ export default function Pacman() {
             direction =
               directions[Math.floor(Math.random() * directions.length)];
           }
-
-          // ghost.currentIdx += direction;
-          // re-draw ghost into the new square
-          // squares[ghost.currentIdx].classList.add(ghost.className, "ghost");
         }
         // else try a new direction
         else
