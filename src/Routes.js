@@ -10,7 +10,7 @@ const Routes = () => {
     <div className="routez">
       <Route path="/" component={Home} />
       <Route path="/" component={Rules} />
-      <Route exact path="/" component={Game} />
+      <Route path="/" component={Game} />
       <Route path="/" component={Footer} />
     </div>
   );
