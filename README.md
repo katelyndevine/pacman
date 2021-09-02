@@ -29,3 +29,18 @@ This week, your challenge is to build a 2D game like Tetris, Super Mario, Civili
 ## Try it out!
 
 [Live site here](https://powerful-falls-77085.herokuapp.com)
+
+## Getting Started
+1. Clone this repository.
+```
+git clone https://github.com/katelyndevine/pacman-react.git
+```
+2. Install the dependencies located in the package.json file.
+```
+npm install
+```
+3. Start the app; this command runs the app in the development mode. Open http://localhost:3000 to view it in the browser.
+```
+npm start
+```
+
