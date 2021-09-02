@@ -10,7 +10,7 @@ const Home = () => {
         <img src={pacmanLogo} alt="Pacman Logo" className="pacmanLogoLarge" />
         <h2>Dive into some nostaglia and play a classic game of Pacman!</h2>
         <h5>
-          This project was create for fun during a week-long{" "}
+          This project was created for fun during a week-long{" "}
           <a href="https://mintbean.io/" target="blank" id="mintbean">
             Mintbean
           </a>{" "}

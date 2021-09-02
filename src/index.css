@@ -86,6 +86,7 @@ hr {
 
 .pacmanLogoLarge {
   width: 800px;
+  margin-top: 175px;
 }
 
 #home {
@@ -164,7 +165,8 @@ h2 {
 
 #rules h1 {
   font-size: 60px;
-  margin: 0;
+  margin-top: 150px;
+  margin-bottom: 0px;
 }
 
 #rules img {
