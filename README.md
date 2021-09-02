@@ -1,6 +1,6 @@
 # Pacman: A Coding Hackathon Project
 
-Dive into some nostaglia and play a classic game of Pacman! This project was created for fun during a week-long [Mintbean] (https://mintbean.io/) Hackathon event.
+Dive into some nostaglia and play a classic game of Pacman! This project was created for fun during a week-long [Mintbean](https://mintbean.io) Hackathon event.
 
 ![Pacman gif](src/images/pacmanEatingDots.gif)
 
@@ -14,4 +14,4 @@ Dive into some nostaglia and play a classic game of Pacman! This project was cre
 
 ## Try it out!
 
-[Live site here] (https://powerful-falls-77085.herokuapp.com/)
+[Live site here](https://powerful-falls-77085.herokuapp.com)
