@@ -11,7 +11,7 @@ const Home = () => {
         <h2>Dive into some nostaglia and play a classic game of Pacman!</h2>
         <h5>
           This project was create for fun during a week-long{" "}
-          <a href="https://mintbean.io/" target="blank">
+          <a href="https://mintbean.io/" target="blank" id="mintbean">
             Mintbean
           </a>{" "}
           Hackathon event. :D{" "}

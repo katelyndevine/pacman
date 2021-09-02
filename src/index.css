@@ -42,6 +42,7 @@ hr {
   position: fixed;
   width: 100%;
   top: 0;
+  left: 0;
   justify-content: flex-start;
   align-items: center;
   /* align-content: flex-start; */
@@ -114,7 +115,7 @@ h2 {
   margin-bottom: 30px;
 }
 
-#home a {
+#mintbean {
   text-decoration: none;
   color: cyan;
 }
@@ -368,4 +369,60 @@ h2 {
 
 .scared-ghost {
   background-color: rgb(0, 0, 255);
+}
+
+.footerContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  justify-content: flex-start;
+  align-items: center;
+  /* align-content: flex-start; */
+  background-color: yellow;
+  height: 50px;
+  padding: 20px;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+}
+
+.footerContainer img {
+  width: 70px;
+}
+
+.footerContainer a {
+  text-decoration: none;
+  color: black;
+}
+
+.footerContainer p {
+  font-size: 12px;
+  text-align: center;
+  margin: 0px;
+}
+
+.footerContainer span {
+  margin-left: 20px;
+  font-size: 12px;
+  letter-spacing: 0;
+  transition: all 315ms ease-in-out;
+}
+
+.footerContainer span:hover {
+  letter-spacing: 5px;
+}
+
+.meetEng {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#katelyn {
+  font-weight: bold;
+  margin-right: 20px;
+  margin-bottom: 0px;
 }
