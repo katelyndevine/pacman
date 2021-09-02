@@ -7,7 +7,7 @@ const Rules = () => {
   return (
     <div id="rules">
       <div className="rules-Characters">
-        <h1>characters / items</h1>
+        <h2 id="charactersTop">characters / items</h2>
         <div className="characterShell">
           <div className="pacmanSquare"></div>
           <p> this is pac-man (aka YOU)</p>

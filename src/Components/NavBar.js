@@ -26,11 +26,11 @@ const NavBar = () => {
             Play
           </Link>
         </li>
-        {/* <li>
-          <Link to="service" spy={true} smooth={true}>
-            Service
+        <li>
+          <Link to="footerContainer" spy={true} smooth={true}>
+            Engineer
           </Link>
-        </li> */}
+        </li>
       </ul>
     </div>
   );

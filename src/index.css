@@ -15,6 +15,10 @@ hr {
   color: white;
 }
 
+body {
+  margin: 0;
+}
+
 .routez {
   margin-top: 250px;
   display: flex;
@@ -165,8 +169,13 @@ h2 {
 
 #rules h1 {
   font-size: 60px;
+  margin: 0px;
+}
+
+#charactersTop {
   margin-top: 150px;
-  margin-bottom: 0px;
+  font-size: 60px;
+  color: white;
 }
 
 #rules img {
@@ -264,7 +273,7 @@ h2 {
   margin: 50px;
   width: 900px;
   align-items: center;
-  /* justify-content: center; */
+  justify-content: center;
 }
 
 #game {
@@ -377,8 +386,8 @@ h2 {
   display: flex;
   flex-direction: row;
   width: 100%;
-  bottom: 0;
-  left: 0;
+  bottom: 0px;
+  left: 0px;
   justify-content: flex-start;
   align-items: center;
   /* align-content: flex-start; */
@@ -427,4 +436,9 @@ h2 {
   font-weight: bold;
   margin-right: 20px;
   margin-bottom: 0px;
+}
+
+#copywrite {
+  font-size: 10px;
+  color: rgb(193, 189, 189);
 }

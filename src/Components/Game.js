@@ -4,7 +4,12 @@ import Pacman from "./Pacman";
 // Disable key up/down page scrolling
 // (so the page doesn't scroll while playing pacman)
 document.addEventListener("keydown", function (e) {
-  if (e.key === "ArrowUp" || e.key === "ArrowDown") {
+  if (
+    e.key === "ArrowUp" ||
+    e.key === "ArrowDown" ||
+    e.key === "ArrowRight" ||
+    e.key === "ArrowLeft"
+  ) {
     e.preventDefault();
   }
 });
